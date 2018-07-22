@@ -1,0 +1,114 @@
+
+
+
+
+
+
+
+
+/* START NAVIGATION */
+nav .brand-logo {
+  position: sticky;
+  vertical-align: middle;
+  width: 60px;
+  height: 100%;
+  margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+  nav .brand-logo {
+    float: right;
+    width: 60px;
+    height: 100%;
+    margin-top: 12px;
+    object-fit: contain;
+  }
+}
+
+.nav-wrapper .fa-bars {
+  font-size: 25px;
+}
+
+.sidenav {
+  width: 315px;
+}
+
+.head-space {
+  margin-top: 30px;
+}
+
+.logo {
+  max-width: 130px;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.omnicon {
+  max-width: 60px;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.omnibars {
+  margin-bottom: 10px;
+}
+/* END NAVIGATION */
+
+
+/* START FOOTER */
+.footer-list {
+  list-style: none;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+/* START FOOTER */
+
+main {
+  flex: 1 0 auto;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+/* MARGIN-BOTTOM */
+.mb-50 {
+  margin-bottom: 50px;
+}
+.mb-45 {
+  margin-bottom: 45px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-35 {
+  margin-bottom: 35px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-25 {
+  margin-bottom: 25px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}

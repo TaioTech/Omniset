@@ -1,0 +1,50 @@
+<nav class="grey darken-3">
+  <div class="container">
+    <div class="nav-wrapper">
+      <!-- BRAND LOGO -->
+      <a href="/" class="brand-logo center">
+        <span><img src="/img/omniset-io-logo.svg" class="omnicon" /></span>
+      </a>
+      <!-- Collapsible NavBars -->
+      <a href="#" data-target="slide-out" class="sidenav-trigger button-collapse show-on-large">
+        <i class="fa fa-bars"></i>
+      </a>
+      <!-- TOP NAV -->
+      <ul class="right hide-on-small-only">
+        {{#if user}}
+          <li>
+            <a href="/dashboard">{{user.firstName}}'s dashboard</a>
+          </li>
+          <li>
+            <a href="/auth/logout"><i class="fa fa-sign-out"></i> Logout</a>
+          </li>
+        {{else}}
+          <li>
+            <a href="/about"><i class="fa fa-bookmark"></i> Learn More</a>
+          </li>
+          <li>
+            <a href="/auth/google"><i class="fa fa-user"></i> Sign Up</a>
+          </li>
+        {{/if}}
+      </ul>
+      <!-- END TOP NAV -->
+      <!-- SIDE NAV -->
+      <ul class="sidenav" id="slide-out">
+        <div class="head-space center">
+          <img class="logo center" src="/img/omniset-io-logo.svg" />
+        </div>
+        <li>
+          <a href="/user/settings"><i class="fa fa-user"></i> View Account</a>
+        </li>
+        <li>
+          <a href="/user/dashboard"><i class="fa fa-gear"></i> View Dashboard</a>
+        </li>
+      </ul>
+      <!-- END SIDE NAV -->
+
+    <!-- END NAV-WRAPPER -->
+    </div>
+  <!-- END CONTAINER -->
+  </div>
+<!-- END NAV -->
+</nav>
