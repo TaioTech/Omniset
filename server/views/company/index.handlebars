@@ -1,0 +1,34 @@
+<h1>Registered Companies</h1>
+<div class="row">
+  {{#each company}}
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          {{#if user}}
+            {{{editIcon user.id ../user.id id}}}
+          {{/if}}
+        </div>
+        <div class="card-content center-align">
+          <h5>{{title}}</h5>
+          <p class="company-text">{{stripTags (truncate description 100)}}</p>
+          <br />
+          <!-- Company Logo -->
+          <!--<div class="chip">
+            {{#if hasLogo}}
+              <img src="{{companyLogo}}" alt="Company Logo">
+            {{/if}}
+          </div>-->
+        </div>
+        <!-- ACTION BUTTON -->
+        <div class="card-action center-align">
+          <!--<a href="/company/show/{{id}}" class="btn blue">
+            Learn More
+          </a>-->
+        </div>
+      <!-- END CARD -->
+      </div>
+    </div>
+  {{else}}
+    <p>No Public Companies Found</p>
+  {{/each}}
+</div>

@@ -1,0 +1,79 @@
+<div class="add-company-header">
+  <h1>Add Company</h1>
+</div>
+<div class="row">
+  <form action="/company" method="post" class="col s12">
+    <div class="row">
+      <!-- TITLE INPUT -->
+      <div class="input-field">
+        <input type="text" name="title">
+        <label for="title">Title</label>
+      </div>
+    </div>
+    <!-- DESCRIPTION INPUT -->
+    <div class="row">
+      <div class="input-field">
+        <input type="text" name="description">
+        <label for="description">Description</label>
+      </div>
+    </div>
+    <!-- PRIMARY COLOR INPUT -->
+    <div class="row">
+      <div class="input-field">
+        <input type="color" name="primary">
+        <label for="primary">Primary Color</label>
+      </div>
+    </div>
+    <!-- SECONDARY COLOR INPUT -->
+    <div class="row">
+      <div class="input-field">
+        <input type="color" name="secondary">
+        <label for="secondary">Secondary Color</label>
+      </div>
+    </div>
+    <!-- LOGO CHECKBOX -->
+    <div class="row">
+      <p>
+        <label>
+          <input type="checkbox" name="hasLogo" checked="checked" />
+          <span>Company Logo</span>
+        </label>
+      </p>
+    </div>
+    <!-- COMPANY LOGO -->
+    <div class="row">
+      <div class="input-field">
+        <input type="file" name="companyLogo" />
+        <label>Company Logo</label>
+      </div>
+    </div>
+    <!-- ESTABLISHED INPUT -->
+    <div class="row">
+      <div class="input-field">
+        <input type="text" class="datepicker" name="established" showMonthAfterYear=true>
+        <label for="established">Date Established</label>
+      </div>
+    </div>
+    <!-- EMPLOYEES INPUT -->
+    <div class="row">
+      <div class="input-field">
+        <input type="number" name="employees" placeholder="Employee Count">
+        <label for="employees">Company Size</label>
+      </div>
+    </div>
+    <!-- STATUS INPUT -->
+    <div class="row">
+      <div class="input-field">
+        <select name="status">
+          <option value="public" selected>Public</option>
+          <option value="private">Private</option>
+          <option value="commerical">Commerical</option>
+        </select>
+        <label for="status">Status</label>
+      </div>
+    </div>
+    <!-- SUBMIT BUTTON -->
+    <input type="submit" value="Save" class="btn">
+  <!-- END OF FORM -->
+  </form>
+</div>
